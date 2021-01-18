@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <header class="header absolute h-auto w-full p-7">
+      <div class="lg:pt-8">
+        <img class="w-36" src="./assets/logo.svg" alt="logo" />
+      </div>
+    </header>
+    <section
+      class="mycontainer pt-24 pb-12 min-h-screen w-full flex flex-col-reverse justify-end items-center"
+    >
+      <div class="left w-full pt-12 pb-0 px-7">
+        <h1
+          class="headingOne tracking-extra-wide leading-extra text-center text-5xl font-extralight uppercase"
+        >
+          We're <br /><span class="headingSpan">coming <br />soon</span>
+        </h1>
+        <p
+          class="paragraph text-center text-sm leading-normal mx-auto mt-5 mb-10"
+        >
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          class="relative block h-12 w-full max-w-sm my-0 mx-auto"
+          action="#"
+        >
+          <label class="invisible absolute" for="Email">Email Address</label>
+          <input
+            class="formInput absolute w-full outline-none h-full pl-7 text-lg"
+            name="Email"
+            id="Email"
+            value=""
+            type="email"
+            placeholder="Email Address"
+          />
+          <img src="./assets/icon-error.svg" class="error-icon" alt="" />
+          <button class="flex justify-center items-center" type="submit">
+            <img src="./assets/icon-arrow.svg" alt="arrow" />
+          </button>
+          <p class="error-text">Please provide a valid email</p>
+        </form>
+      </div>
+      <div class="right"></div>
+    </section>
+
+    <footer
+      class="py-2 px-0 bg-black text-white text-center text-sm leading-tight"
+    >
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://webcifar.com" target="_blank">Web Cifar</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
